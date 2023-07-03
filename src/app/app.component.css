@@ -1,0 +1,37 @@
+.ml-5 {
+    margin-left: 5px;
+  }
+  
+  .mt-5 {
+    margin-top: 5px;
+  }
+  
+  .done {
+    color: rgb(255, 47, 24);
+    text-decoration: line-through;
+  }
+  
+  input[type='date'].disabled::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  .content {
+    overflow: auto;
+    height: 500px;
+    max-height: 500px;
+  }
+  
+  div{
+    background-color: #c27960;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 9px;
+    border-color: rgb(124, 21, 214);
+    border-style: none;
+    
+  }
+h1 {
+
+  background-color: rgb(134, 209, 43);
+  border-style: solid;
+  border-radius: 5px;
+}
