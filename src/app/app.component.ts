@@ -1,20 +1,21 @@
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'first-project';
-  apptitle = 'Lista zadań'
+ config: { [key: string]: string } | null = null;
 
-  getFooter(): string {
-    return '© Lista zadań,All rights reserved.Kriss :)';
-  }
-
-  getDate(): Date{
-    return new Date();
-  }
-  
+ constructor() {
+  setTimeout( () => { 
+   this.config = {
+     title: 'Lista zadań',
+     footer: '© Lista zadań zbudowana w Angularze.',
+     date: new Date().toDateString(),
+  };
+ }, 500);
+ }
 }
